@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haysam Elamin · AI/ML ePortfolio</title>
+  <meta name="description" content="Personal ePortfolio of Haysam Elamin — Applied AI & Machine Learning at Conestoga College. Projects, experience, skills, and contact.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {--brand:#0d6efd;}
+    html {scroll-behavior:smooth}
+    .navbar-brand span{font-weight:700}
+    .hero{background:linear-gradient(180deg,#f8fbff, #fff)}
+    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.06)}
+    .section-title{border-left:4px solid var(--brand);padding-left:.75rem}
+    .badge-skill{font-weight:500}
+    .timeline{position:relative;padding-left:2rem}
+    .timeline::before{content:"";position:absolute;left:.6rem;top:.2rem;bottom:.2rem;width:2px;background:#e9ecef}
+    .timeline .item{position:relative;margin-bottom:1.5rem}
+    .timeline .item::before{content:"";position:absolute;left:-.1rem;top:.35rem;width:.7rem;height:.7rem;background:var(--brand);border-radius:50%}
+    .project-card img{object-fit:cover;height:180px}
+    .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+    footer a{text-decoration:none}
+    .link-underline{position:relative}
+    .link-underline::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:currentColor;transition:width .25s}
+    .link-underline:hover::after{width:100%}
+    .tag{background:#f1f3f5;border-radius:999px;padding:.25rem .6rem;margin:.2rem;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><i class="bi bi-cpu me-2"></i><span>Haysam Elamin</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="d-flex align-items-center mb-3">
+            <img class="avatar me-3" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Profile placeholder">
+            <div>
+              <h1 class="h3 mb-0">Applied AI & Machine Learning</h1>
+              <p class="text-muted mb-0">Conestoga College · Kitchener, Ontario</p>
+            </div>
+          </div>
+          <p class="lead mb-4">I design student‑centred, data‑driven solutions. Current focus: NLP, analytics, and AI prototypes for education and public‑sector use cases. Open to Jan–Apr 2026 co‑op/research roles in AI/ML, data analytics, or edtech.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#projects" class="btn btn-primary"><i class="bi bi-rocket-takeoff me-2"></i>View Projects</a>
+            <a href="#contact" class="btn btn-outline-primary"><i class="bi bi-envelope me-2"></i>Contact</a>
+            <a class="btn btn-light border" href="#resume"><i class="bi bi-file-earmark-text me-2"></i>Résumé</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white rounded-3 shadow-soft">
+            <h2 class="h6 text-uppercase text-muted">Quick Facts</h2>
+            <ul class="list-unstyled small mb-0 mt-3">
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>AI/ML student · Conestoga College</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>International academic & administrative background</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Projects: Symptomsphere, Student Success Advisor, Keyboard Vision AI, E‑commerce DSS</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Interests: RL, NLP, data ethics, education tech</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 mb-4">About</h2>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <p>I build student‑centred programs and AI prototypes that turn complex problems into simple, measurable improvements. I have experience coordinating academic and administrative initiatives across international universities, and I’m advancing my technical depth in <strong>Applied AI & Machine Learning</strong> to bring analytics and NLP into education and public services.</p>
+          <p>Highlights include leading student activities recognized by the <em>University of Jeddah Marathon Award</em> (two years), developing <strong>RAG chatbots</strong>, text‑classification pipelines, and dashboards, and collaborating on Agile teams using Scrum.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="bg-white p-3 rounded-3 shadow-soft h-100">
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-geo-alt text-primary me-2"></i><span>Kitchener, Ontario</span></div>
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+12896869819" class="link-underline">289‑686‑9819</a></div>
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-envelope text-primary me-2"></i><a href="mailto:haysam.elamin@email.com" class="link-underline">haysam.elamin@email.com</a></div>
+            <div class="d-flex align-items-center"><i class="bi bi-linkedin text-primary me-2"></i><a href="#" class="link-underline">linkedin.com/in/haysamelamin</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title h4 mb-4">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3 class="h6 text-uppercase text-muted">Technical</h3>
+          <div class="mt-2">
+            <span class="badge bg-light text-dark border badge-skill">Python</span>
+            <span class="badge bg-light text-dark border badge-skill">Pandas</span>
+            <span class="badge bg-light text-dark border badge-skill">NumPy</span>
+            <span class="badge bg-light text-dark border badge-skill">scikit‑learn</span>
+            <span class="badge bg-light text-dark border badge-skill">TensorFlow</span>
+            <span class="badge bg-light text-dark border badge-skill">PyTorch</span>
+            <span class="badge bg-light text-dark border badge-skill">NLP (BERT/DistilBERT)</span>
+            <span class="badge bg-light text-dark border badge-skill">RAG</span>
+            <span class="badge bg-light text-dark border badge-skill">FastAPI</span>
+            <span class="badge bg-light text-dark border badge-skill">Streamlit</span>
+            <span class="badge bg-light text-dark border badge-skill">SQL</span>
+            <span class="badge bg-light text-dark border badge-skill">Git/GitHub</span>
+            <span class="badge bg-light text-dark border badge-skill">Docker</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h6 text-uppercase text-muted">Methods & Practices</h3>
+          <div class="mt-2">
+            <span class="badge bg-light text-dark border badge-skill">Agile/Scrum</span>
+            <span class="badge bg-light text-dark border badge-skill">EDA & Visualization</span>
+            <span class="badge bg-light text-dark border badge-skill">Statistical Testing</span>
+            <span class="badge bg-light text-dark border badge-skill">PCA & Clustering</span>
+            <span class="badge bg-light text-dark border badge-skill">Model Evaluation</span>
+            <span class="badge bg-light text-dark border badge-skill">RL (MRP, Q‑learning)</span>
+            <span class="badge bg-light text-dark border badge-skill">CX Analytics</span>
+            <span class="badge bg-light text-dark border badge-skill">Toyota Business Process (OMT)</span>
+            <span class="badge bg-light text-dark border badge-skill">RFP/Proposal Writing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 mb-4">Selected Projects</h2>
+      <div class="row g-4">
+        <!-- Symptomsphere -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1584982751601-97dcc097ba29?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Medical AI">
+            <div class="card-body">
+              <h3 class="h6">Symptomsphere — AI Patient Actor</h3>
+              <p class="small text-muted mb-2">NLP · RAG · Simulation · Education</p>
+              <p class="card-text">Virtual patient for medical students to practice diagnostic interviews with guided feedback and scoring.</p>
+              <div class="d-flex flex-wrap">
+                <span class="tag">BERT/NLP</span>
+                <span class="tag">Retrieval</span>
+                <span class="tag">FastAPI</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github me-1"></i>Repo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Student Success Advisor -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Education chatbot">
+            <div class="card-body">
+              <h3 class="h6">Student Success Advisor — RAG Chatbot</h3>
+              <p class="small text-muted mb-2">RAG · Emotion/Intent · Edtech</p>
+              <p class="card-text">Conestoga‑focused chatbot with retrieval, emotion detection, and triage to appropriate services.</p>
+              <div class="d-flex flex-wrap">
+                <span class="tag">FAISS</span>
+                <span class="tag">OpenAI API</span>
+                <span class="tag">Streamlit</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github me-1"></i>Repo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Keyboard Vision AI -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Keyboard AI">
+            <div class="card-body">
+              <h3 class="h6">Keyboard Vision AI — Safety Keyboard</h3>
+              <p class="small text-muted mb-2">On‑device AI · Safety · Privacy</p>
+              <p class="card-text">Windows keyboard that flags bullying/offensive language and distress while protecting privacy.</p>
+              <div class="d-flex flex-wrap">
+                <span class="tag">On‑device</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Safety</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github me-1"></i>Repo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- E-commerce DSS -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1557825835-70d97c4aa2d7?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="E-commerce analytics">
+            <div class="card-body">
+              <h3 class="h6">E‑commerce Customer Insights — DSS</h3>
+              <p class="small text-muted mb-2">Clustering · PCA · Regression</p>
+              <p class="card-text">Segmentation and spending analysis with PCA, Pearson correlation, and regression‑based insights.</p>
+              <div class="d-flex flex-wrap">
+                <span class="tag">PCA</span>
+                <span class="tag">Clustering</span>
+                <span class="tag">Dashboards</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github me-1"></i>Repo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Parkinson's speech -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Audio ML">
+            <div class="card-body">
+              <h3 class="h6">Parkinson’s Prediction — Speech Features</h3>
+              <p class="small text-muted mb-2">ML · Health · Feature Engineering</p>
+              <p class="card-text">Models trained on vocal biomarkers to predict Parkinson’s disease status; focus on interpretability.</p>
+              <div class="d-flex flex-wrap">
+                <span class="tag">Naive Bayes</span>
+                <span class="tag">LogReg</span>
+                <span class="tag">Cross‑validation</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github me-1"></i>Repo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- RL Maze -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-soft">
+            <img src="https://images.unsplash.com/photo-1505976378723-9726b54e9bb0?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Reinforcement Learning">
+            <div class="card-body">
+              <h3 class="h6">RL Maze — Monte Carlo & Q‑Learning</h3>
+              <p class="small text-muted mb-2">Reinforcement Learning</p>
+              <p class="card-text">Educational notebook demonstrating policy evaluation, Monte Carlo control, and Q‑learning on gridworld.</p>
+              <div class="d-flex flex-wrap">
+                <span class="tag">RL</span>
+                <span class="tag">Visualization</span>
+                <span class="tag">Education</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github me-1"></i>Repo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title h4 mb-4">Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3 class="h6 mb-1">Student · Applied AI & Machine Learning — Conestoga College</h3>
+          <div class="small text-muted">2025 — Present · Kitchener, ON</div>
+          <ul class="small mt-2 mb-0">
+            <li>Built ML/NLP projects: RAG chatbot, Parkinson’s classifier, RL maze, e‑commerce analytics.</li>
+            <li>Agile coursework (Scrum), rigorous notebooks with EDA, statistical testing, and clear structure.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="h6 mb-1">Academic & Administrative Roles — International Universities</h3>
+          <div class="small text-muted">Prior to 2025</div>
+          <ul class="small mt-2 mb-0">
+            <li>Led academic departments and student services; improved processes and outcomes.</li>
+            <li>Student Activities Coordinator; initiatives recognized by University of Jeddah Marathon Award (2×).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 mb-4">Education</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-3 bg-white rounded-3 shadow-soft h-100">
+            <h3 class="h6 mb-1">Conestoga College — Applied AI & Machine Learning</h3>
+            <div class="small text-muted mb-2">Graduate Certificate · 2025 — Present</div>
+            <p class="small mb-0">Coursework: PROG8431 (Data Analysis), CSCN8000 (AI Algorithms & Math), RL, NLP/IR, Projects in ML.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 bg-white rounded-3 shadow-soft h-100">
+            <h3 class="h6 mb-1">International Universities (Prior Experience)</h3>
+            <div class="small text-muted mb-2">Academic & Administrative Leadership</div>
+            <p class="small mb-0">Cross‑cultural teaching, student services, and departmental coordination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title h4 mb-3">Résumé</h2>
+      <p class="mb-3">Download a PDF copy of my résumé or view it online. (Replace the placeholder links with your actual files.)</p>
+      <a class="btn btn-primary me-2" href="#" download><i class="bi bi-download me-2"></i>Download PDF</a>
+      <a class="btn btn-outline-primary" href="#" target="_blank"><i class="bi bi-box-arrow-up-right me-2"></i>View Online</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title h4 mb-4">Contact</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="bg-white p-4 rounded-3 shadow-soft">
+            <form name="contact" method="post" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" name="message" rows="4" placeholder="How can I help?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="bi bi-send me-2"></i>Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-light rounded-3 h-100">
+            <h3 class="h6 text-uppercase text-muted">Availability</h3>
+            <p class="small mb-3">Open to co‑op/research roles (Jan–Apr 2026) in AI/ML, data analytics, or edtech.</p>
+            <h3 class="h6 text-uppercase text-muted">Links</h3>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><i class="bi bi-github me-2"></i><a class="link-underline" href="#">github.com/haysam</a></li>
+              <li class="mb-2"><i class="bi bi-linkedin me-2"></i><a class="link-underline" href="#">linkedin.com/in/haysamelamin</a></li>
+              <li><i class="bi bi-file-earmark-text me-2"></i><a class="link-underline" href="#">Résumé (PDF)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 border-top bg-white">
+    <div class="container small d-flex flex-wrap gap-2 justify-content-between">
+      <span>© <span id="y"></span> Haysam Elamin</span>
+      <span>
+        <a href="#home" class="me-3">Back to top</a>
+        <a href="#contact" class="me-3">Contact</a>
+        <a href="#" class="">Privacy</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
